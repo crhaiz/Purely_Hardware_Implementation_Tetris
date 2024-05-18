@@ -1,0 +1,629 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Dec  8 02:17:55 2023
+# Process ID: 33464
+# Current directory: C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1
+# Command line: vivado.exe -log mb_usb_hdmi_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mb_usb_hdmi_top.tcl
+# Log file: C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1/mb_usb_hdmi_top.vds
+# Journal file: C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1\vivado.jou
+# Running On: rocksmashgood, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 16541 MB
+#-----------------------------------------------------------
+source mb_usb_hdmi_top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/cherr/ECE385_final134/ECE385_final_10/Downloads/RD_hdmi_ip2020'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.cache/ip 
+Command: synth_design -top mb_usb_hdmi_top -part xc7s50csga324-1 -flatten_hierarchy none -incremental_mode off
+Starting synth_design
+INFO: [IP_Flow 19-2162] IP 'hdmi_tx_0' is locked:
+* IP definition 'hdmi_tx (1.0)' for IP 'hdmi_tx_0' (customized with software release 2022.2) was not found in the IP Catalog.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 24340
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'Ball_Y_Motion' is not allowed [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/sources_1/imports/design_source/ball.sv:31]
+INFO: [Synth 8-11241] undeclared symbol 'grid', assumed default net type 'wire' [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/sources_1/imports/design_source/mb_usb_hdmi_top.sv:190]
+INFO: [Synth 8-11241] undeclared symbol 'blockexist', assumed default net type 'wire' [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/sources_1/imports/design_source/mb_usb_hdmi_top.sv:193]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1216.258 ; gain = 408.074
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mb_usb_hdmi_top' [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/sources_1/imports/design_source/mb_usb_hdmi_top.sv:24]
+INFO: [Synth 8-6157] synthesizing module 'HexDriver' [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/sources_1/imports/design_source/hex.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/sources_1/imports/design_source/hex.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/sources_1/imports/design_source/hex.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/sources_1/imports/design_source/hex.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/sources_1/imports/design_source/hex.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/sources_1/imports/design_source/hex.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/sources_1/imports/design_source/hex.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/sources_1/imports/design_source/hex.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/sources_1/imports/design_source/hex.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'HexDriver' (0#1) [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/sources_1/imports/design_source/hex.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'mb_block' [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:936]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_uartlite_0_0' [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1/.Xil/Vivado-33464-rocksmashgood/realtime/mb_block_axi_uartlite_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_uartlite_0_0' (0#1) [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1/.Xil/Vivado-33464-rocksmashgood/realtime/mb_block_axi_uartlite_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_clk_wiz_1_0' [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1/.Xil/Vivado-33464-rocksmashgood/realtime/mb_block_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_clk_wiz_1_0' (0#1) [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1/.Xil/Vivado-33464-rocksmashgood/realtime/mb_block_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_gpio_0_2' [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1/.Xil/Vivado-33464-rocksmashgood/realtime/mb_block_axi_gpio_0_2_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_gpio_0_2' (0#1) [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1/.Xil/Vivado-33464-rocksmashgood/realtime/mb_block_axi_gpio_0_2_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_gpio_0_3' [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1/.Xil/Vivado-33464-rocksmashgood/realtime/mb_block_axi_gpio_0_3_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_gpio_0_3' (0#1) [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1/.Xil/Vivado-33464-rocksmashgood/realtime/mb_block_axi_gpio_0_3_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_gpio_0_1' [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1/.Xil/Vivado-33464-rocksmashgood/realtime/mb_block_axi_gpio_0_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_gpio_0_1' (0#1) [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1/.Xil/Vivado-33464-rocksmashgood/realtime/mb_block_axi_gpio_0_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_mdm_1_0' [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1/.Xil/Vivado-33464-rocksmashgood/realtime/mb_block_mdm_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_mdm_1_0' (0#1) [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1/.Xil/Vivado-33464-rocksmashgood/realtime/mb_block_mdm_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_microblaze_0_0' [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1/.Xil/Vivado-33464-rocksmashgood/realtime/mb_block_microblaze_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_microblaze_0_0' (0#1) [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1/.Xil/Vivado-33464-rocksmashgood/realtime/mb_block_microblaze_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_microblaze_0_axi_intc_0' [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1/.Xil/Vivado-33464-rocksmashgood/realtime/mb_block_microblaze_0_axi_intc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_microblaze_0_axi_intc_0' (0#1) [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1/.Xil/Vivado-33464-rocksmashgood/realtime/mb_block_microblaze_0_axi_intc_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_microblaze_0_axi_periph_0' [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:1602]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1TK4492' [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1TK4492' (0#1) [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:12]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_UT2LJ' [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:144]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_UT2LJ' (0#1) [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:144]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_1ST4AV9' [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:276]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_1ST4AV9' (0#1) [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:276]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_1VI1NO' [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:408]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_1VI1NO' (0#1) [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:408]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_1SCR8U8' [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:540]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_1SCR8U8' (0#1) [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:540]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_2FAMHT' [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:672]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_2FAMHT' (0#1) [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:672]
+INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_1QRRYF7' [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:804]
+INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_1QRRYF7' (0#1) [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:804]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_5YIJ0K' [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:2926]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_5YIJ0K' (0#1) [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:2926]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_xbar_0' [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1/.Xil/Vivado-33464-rocksmashgood/realtime/mb_block_xbar_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_xbar_0' (0#1) [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1/.Xil/Vivado-33464-rocksmashgood/realtime/mb_block_xbar_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'mb_block_xbar_0' is unconnected for instance 'xbar' [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:2651]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'mb_block_xbar_0' is unconnected for instance 'xbar' [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:2651]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'mb_block_xbar_0' has 40 connections declared, but only 38 given [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:2651]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_microblaze_0_axi_periph_0' (0#1) [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:1602]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_G5BFEQ' [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:2692]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_dlmb_bram_if_cntlr_0' [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1/.Xil/Vivado-33464-rocksmashgood/realtime/mb_block_dlmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_dlmb_bram_if_cntlr_0' (0#1) [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1/.Xil/Vivado-33464-rocksmashgood/realtime/mb_block_dlmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_dlmb_v10_0' [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1/.Xil/Vivado-33464-rocksmashgood/realtime/mb_block_dlmb_v10_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_dlmb_v10_0' (0#1) [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1/.Xil/Vivado-33464-rocksmashgood/realtime/mb_block_dlmb_v10_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'mb_block_dlmb_v10_0' is unconnected for instance 'dlmb_v10' [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:2838]
+WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'mb_block_dlmb_v10_0' has 25 connections declared, but only 24 given [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:2838]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_ilmb_bram_if_cntlr_0' [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1/.Xil/Vivado-33464-rocksmashgood/realtime/mb_block_ilmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_ilmb_bram_if_cntlr_0' (0#1) [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1/.Xil/Vivado-33464-rocksmashgood/realtime/mb_block_ilmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_ilmb_v10_0' [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1/.Xil/Vivado-33464-rocksmashgood/realtime/mb_block_ilmb_v10_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_ilmb_v10_0' (0#1) [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1/.Xil/Vivado-33464-rocksmashgood/realtime/mb_block_ilmb_v10_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'mb_block_ilmb_v10_0' is unconnected for instance 'ilmb_v10' [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:2884]
+WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'mb_block_ilmb_v10_0' has 25 connections declared, but only 24 given [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:2884]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_lmb_bram_0' [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1/.Xil/Vivado-33464-rocksmashgood/realtime/mb_block_lmb_bram_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_lmb_bram_0' (0#1) [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1/.Xil/Vivado-33464-rocksmashgood/realtime/mb_block_lmb_bram_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'mb_block_lmb_bram_0' is unconnected for instance 'lmb_bram' [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:2909]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'mb_block_lmb_bram_0' is unconnected for instance 'lmb_bram' [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:2909]
+WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'mb_block_lmb_bram_0' has 16 connections declared, but only 14 given [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:2909]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_G5BFEQ' (0#1) [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:2692]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_rst_clk_wiz_1_100M_0' [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1/.Xil/Vivado-33464-rocksmashgood/realtime/mb_block_rst_clk_wiz_1_100M_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_rst_clk_wiz_1_100M_0' (0#1) [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1/.Xil/Vivado-33464-rocksmashgood/realtime/mb_block_rst_clk_wiz_1_100M_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'mb_block_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:1532]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'mb_block_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:1532]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_1_100M' of module 'mb_block_rst_clk_wiz_1_100M_0' has 10 connections declared, but only 8 given [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:1532]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_quad_spi_0_0' [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1/.Xil/Vivado-33464-rocksmashgood/realtime/mb_block_axi_quad_spi_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_quad_spi_0_0' (0#1) [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1/.Xil/Vivado-33464-rocksmashgood/realtime/mb_block_axi_quad_spi_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'io0_t' of module 'mb_block_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:1541]
+WARNING: [Synth 8-7071] port 'io1_o' of module 'mb_block_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:1541]
+WARNING: [Synth 8-7071] port 'io1_t' of module 'mb_block_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:1541]
+WARNING: [Synth 8-7071] port 'sck_t' of module 'mb_block_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:1541]
+WARNING: [Synth 8-7071] port 'ss_t' of module 'mb_block_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:1541]
+WARNING: [Synth 8-7023] instance 'spi_usb' of module 'mb_block_axi_quad_spi_0_0' has 33 connections declared, but only 28 given [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:1541]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_timer_0_0' [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1/.Xil/Vivado-33464-rocksmashgood/realtime/mb_block_axi_timer_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_timer_0_0' (0#1) [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1/.Xil/Vivado-33464-rocksmashgood/realtime/mb_block_axi_timer_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'generateout0' of module 'mb_block_axi_timer_0_0' is unconnected for instance 'timer_usb_axi' [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:1570]
+WARNING: [Synth 8-7071] port 'generateout1' of module 'mb_block_axi_timer_0_0' is unconnected for instance 'timer_usb_axi' [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:1570]
+WARNING: [Synth 8-7071] port 'pwm0' of module 'mb_block_axi_timer_0_0' is unconnected for instance 'timer_usb_axi' [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:1570]
+WARNING: [Synth 8-7023] instance 'timer_usb_axi' of module 'mb_block_axi_timer_0_0' has 26 connections declared, but only 23 given [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:1570]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_xlconcat_0_0' [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/ip/mb_block_xlconcat_0_0/synth/mb_block_xlconcat_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (0#1) [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_xlconcat_0_0' (0#1) [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/ip/mb_block_xlconcat_0_0/synth/mb_block_xlconcat_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block' (0#1) [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/synth/mb_block.v:936]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1/.Xil/Vivado-33464-rocksmashgood/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1/.Xil/Vivado-33464-rocksmashgood/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'vga_controller' [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/sources_1/imports/design_source/VGA_controller.sv:26]
+INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (0#1) [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/sources_1/imports/design_source/VGA_controller.sv:26]
+WARNING: [Synth 8-7071] port 'sync' of module 'vga_controller' is unconnected for instance 'vga' [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/sources_1/imports/design_source/mb_usb_hdmi_top.sv:117]
+WARNING: [Synth 8-7023] instance 'vga' of module 'vga_controller' has 8 connections declared, but only 7 given [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/sources_1/imports/design_source/mb_usb_hdmi_top.sv:117]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_tx_0' [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1/.Xil/Vivado-33464-rocksmashgood/realtime/hdmi_tx_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_tx_0' (0#1) [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1/.Xil/Vivado-33464-rocksmashgood/realtime/hdmi_tx_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ball' [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/sources_1/imports/design_source/ball.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'ball' (0#1) [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/sources_1/imports/design_source/ball.sv:17]
+WARNING: [Synth 8-7071] port 'canmove' of module 'ball' is unconnected for instance 'ball_instance' [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/sources_1/imports/design_source/mb_usb_hdmi_top.sv:158]
+WARNING: [Synth 8-7071] port 'startGame' of module 'ball' is unconnected for instance 'ball_instance' [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/sources_1/imports/design_source/mb_usb_hdmi_top.sv:158]
+WARNING: [Synth 8-7023] instance 'ball_instance' of module 'ball' has 14 connections declared, but only 12 given [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/sources_1/imports/design_source/mb_usb_hdmi_top.sv:158]
+INFO: [Synth 8-6157] synthesizing module 'color_mapper' [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/sources_1/imports/design_source/Color_Mapper.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'color_mapper' (0#1) [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/sources_1/imports/design_source/Color_Mapper.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'gridmapper' [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/sources_1/new/gridmapper.sv:24]
+INFO: [Synth 8-6155] done synthesizing module 'gridmapper' (0#1) [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/sources_1/new/gridmapper.sv:24]
+INFO: [Synth 8-6157] synthesizing module 'randnumgen' [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/sources_1/new/randnumgen.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'randnumgen' (0#1) [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/sources_1/new/randnumgen.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'rotation' [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/sources_1/new/rotation.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'rotation' (0#1) [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/sources_1/new/rotation.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'gamefsm' [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/sources_1/new/gamefsm.sv:23]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/sources_1/new/gamefsm.sv:64]
+INFO: [Synth 8-6155] done synthesizing module 'gamefsm' (0#1) [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/sources_1/new/gamefsm.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'updatearraygrid' [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/sources_1/new/updatearraygrid.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'updatearraygrid' (0#1) [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/sources_1/new/updatearraygrid.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'movementchecker' [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/sources_1/new/movementchecker.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'movementchecker' (0#1) [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/sources_1/new/movementchecker.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'mb_usb_hdmi_top' (0#1) [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/sources_1/imports/design_source/mb_usb_hdmi_top.sv:24]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register Ball_Y_Motion_reg in module ball. [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/sources_1/imports/design_source/ball.sv:85]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register Ball_X_Motion_reg in module ball. [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/sources_1/imports/design_source/ball.sv:86]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register BallY_reg in module ball. [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/sources_1/imports/design_source/ball.sv:87]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register BallX_reg in module ball. [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/sources_1/imports/design_source/ball.sv:88]
+WARNING: [Synth 8-7129] Port Clk in module movementchecker is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Ball_size[9] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Ball_size[8] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Ball_size[7] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Ball_size[6] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Ball_size[5] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Ball_size[4] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Ball_size[3] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Ball_size[2] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Ball_size[1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Ball_size[0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[25][11][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[25][11][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[25][10][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[25][10][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[25][9][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[25][9][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[25][8][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[25][8][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[25][7][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[25][7][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[25][6][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[25][6][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[25][5][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[25][5][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[25][4][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[25][4][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[25][3][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[25][3][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[25][2][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[25][2][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[25][1][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[25][1][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[25][0][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[25][0][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[24][11][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[24][11][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[24][10][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[24][10][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[24][9][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[24][9][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[24][8][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[24][8][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[24][7][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[24][7][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[24][6][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[24][6][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[24][5][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[24][5][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[24][4][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[24][4][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[24][3][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[24][3][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[24][2][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[24][2][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[24][1][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[24][1][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[24][0][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[24][0][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[23][11][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[23][11][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[23][10][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[23][10][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[23][9][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[23][9][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[23][8][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[23][8][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[23][7][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[23][7][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[23][6][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[23][6][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[23][5][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[23][5][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[23][4][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[23][4][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[23][3][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[23][3][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[23][2][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[23][2][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[23][1][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[23][1][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[23][0][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[23][0][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[22][11][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[22][11][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[22][10][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[22][10][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[22][9][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[22][9][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[22][8][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[22][8][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[22][7][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[22][7][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[22][6][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[22][6][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[22][5][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[22][5][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[22][4][1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[22][4][0] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arraygrid[22][3][1] in module color_mapper is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1879.320 ; gain = 1071.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1879.320 ; gain = 1071.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1879.320 ; gain = 1071.137
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1879.320 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_0/mb_block_microblaze_0_0/mb_block_microblaze_0_0_in_context.xdc] for cell 'mb_block_i/microblaze_0'
+Finished Parsing XDC File [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_0/mb_block_microblaze_0_0/mb_block_microblaze_0_0_in_context.xdc] for cell 'mb_block_i/microblaze_0'
+Parsing XDC File [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/ip/mb_block_dlmb_v10_0/mb_block_dlmb_v10_0/mb_block_dlmb_v10_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/ip/mb_block_dlmb_v10_0/mb_block_dlmb_v10_0/mb_block_dlmb_v10_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/ip/mb_block_ilmb_v10_0/mb_block_ilmb_v10_0/mb_block_dlmb_v10_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/ip/mb_block_ilmb_v10_0/mb_block_ilmb_v10_0/mb_block_dlmb_v10_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/ip/mb_block_dlmb_bram_if_cntlr_0/mb_block_dlmb_bram_if_cntlr_0/mb_block_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/ip/mb_block_dlmb_bram_if_cntlr_0/mb_block_dlmb_bram_if_cntlr_0/mb_block_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/ip/mb_block_ilmb_bram_if_cntlr_0/mb_block_ilmb_bram_if_cntlr_0/mb_block_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/ip/mb_block_ilmb_bram_if_cntlr_0/mb_block_ilmb_bram_if_cntlr_0/mb_block_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/ip/mb_block_lmb_bram_0/mb_block_lmb_bram_0/mb_block_lmb_bram_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/ip/mb_block_lmb_bram_0/mb_block_lmb_bram_0/mb_block_lmb_bram_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/ip/mb_block_xbar_0/mb_block_xbar_0/mb_block_xbar_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/ip/mb_block_xbar_0/mb_block_xbar_0/mb_block_xbar_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_axi_intc_0/mb_block_microblaze_0_axi_intc_0/mb_block_microblaze_0_axi_intc_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_axi_intc'
+Finished Parsing XDC File [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_axi_intc_0/mb_block_microblaze_0_axi_intc_0/mb_block_microblaze_0_axi_intc_0_in_context.xdc] for cell 'mb_block_i/microblaze_0_axi_intc'
+Parsing XDC File [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/ip/mb_block_mdm_1_0/mb_block_mdm_1_0/mb_block_mdm_1_0_in_context.xdc] for cell 'mb_block_i/mdm_1'
+Finished Parsing XDC File [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/ip/mb_block_mdm_1_0/mb_block_mdm_1_0/mb_block_mdm_1_0_in_context.xdc] for cell 'mb_block_i/mdm_1'
+Parsing XDC File [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/ip/mb_block_clk_wiz_1_0/mb_block_clk_wiz_1_0/mb_block_clk_wiz_1_0_in_context.xdc] for cell 'mb_block_i/clk_wiz_1'
+Finished Parsing XDC File [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/ip/mb_block_clk_wiz_1_0/mb_block_clk_wiz_1_0/mb_block_clk_wiz_1_0_in_context.xdc] for cell 'mb_block_i/clk_wiz_1'
+Parsing XDC File [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/ip/mb_block_rst_clk_wiz_1_100M_0/mb_block_rst_clk_wiz_1_100M_0/mb_block_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'mb_block_i/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/ip/mb_block_rst_clk_wiz_1_100M_0/mb_block_rst_clk_wiz_1_100M_0/mb_block_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'mb_block_i/rst_clk_wiz_1_100M'
+Parsing XDC File [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/ip/mb_block_axi_uartlite_0_0/mb_block_axi_uartlite_0_0/mb_block_axi_uartlite_0_0_in_context.xdc] for cell 'mb_block_i/axi_uartlite_0'
+Finished Parsing XDC File [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/ip/mb_block_axi_uartlite_0_0/mb_block_axi_uartlite_0_0/mb_block_axi_uartlite_0_0_in_context.xdc] for cell 'mb_block_i/axi_uartlite_0'
+Parsing XDC File [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/ip/mb_block_axi_gpio_0_1/mb_block_axi_gpio_0_1/mb_block_axi_gpio_0_0_in_context.xdc] for cell 'mb_block_i/gpio_usb_rst'
+Finished Parsing XDC File [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/ip/mb_block_axi_gpio_0_1/mb_block_axi_gpio_0_1/mb_block_axi_gpio_0_0_in_context.xdc] for cell 'mb_block_i/gpio_usb_rst'
+Parsing XDC File [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/ip/mb_block_axi_gpio_0_2/mb_block_axi_gpio_0_2/mb_block_axi_gpio_0_2_in_context.xdc] for cell 'mb_block_i/gpio_usb_int'
+Finished Parsing XDC File [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/ip/mb_block_axi_gpio_0_2/mb_block_axi_gpio_0_2/mb_block_axi_gpio_0_2_in_context.xdc] for cell 'mb_block_i/gpio_usb_int'
+Parsing XDC File [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/ip/mb_block_axi_gpio_0_3/mb_block_axi_gpio_0_3/mb_block_axi_gpio_0_3_in_context.xdc] for cell 'mb_block_i/gpio_usb_keycode'
+Finished Parsing XDC File [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/ip/mb_block_axi_gpio_0_3/mb_block_axi_gpio_0_3/mb_block_axi_gpio_0_3_in_context.xdc] for cell 'mb_block_i/gpio_usb_keycode'
+Parsing XDC File [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/ip/mb_block_axi_timer_0_0/mb_block_axi_timer_0_0/mb_block_axi_timer_0_0_in_context.xdc] for cell 'mb_block_i/timer_usb_axi'
+Finished Parsing XDC File [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/ip/mb_block_axi_timer_0_0/mb_block_axi_timer_0_0/mb_block_axi_timer_0_0_in_context.xdc] for cell 'mb_block_i/timer_usb_axi'
+Parsing XDC File [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/ip/mb_block_axi_quad_spi_0_0/mb_block_axi_quad_spi_0_0/mb_block_axi_quad_spi_0_0_in_context.xdc] for cell 'mb_block_i/spi_usb'
+Finished Parsing XDC File [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/bd/mb_block/ip/mb_block_axi_quad_spi_0_0/mb_block_axi_quad_spi_0_0/mb_block_axi_quad_spi_0_0_in_context.xdc] for cell 'mb_block_i/spi_usb'
+Parsing XDC File [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc] for cell 'vga_to_hdmi'
+Finished Parsing XDC File [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc] for cell 'vga_to_hdmi'
+Parsing XDC File [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_wiz'
+WARNING: [Constraints 18-619] A clock with name 'Clk' already exists, overwriting the previous clock with the same name. [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc:1]
+Finished Parsing XDC File [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_wiz'
+Parsing XDC File [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc]
+CRITICAL WARNING: [Constraints 18-1056] Clock 'clk_100' completely overrides clock 'Clk'.
+New: create_clock -period 10.000 -name clk_100 -waveform {0.000 5.000} [get_ports Clk], [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc:1]
+Previous: create_clock -period 10.000 [get_ports Clk], [c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc:1]
+Resolution: Review the constraint files and remove the redundant clock definition(s). If the clock constraints are not saved in a file, you can first save the constraints to an XDC file and reload the design once the constraints have been corrected.
+Finished Parsing XDC File [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mb_usb_hdmi_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mb_usb_hdmi_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1970.824 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.114 . Memory (MB): peak = 1970.824 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'mb_block_i/spi_usb' at clock pin 'ext_spi_clk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'mb_block_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1970.828 ; gain = 1162.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s50csga324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1970.828 ; gain = 1162.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_clk_n. (constraint file  c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_clk_n. (constraint file  c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_clk_p. (constraint file  c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_clk_p. (constraint file  c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_data_n[0]. (constraint file  c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_n[0]. (constraint file  c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_data_n[1]. (constraint file  c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_n[1]. (constraint file  c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_data_n[2]. (constraint file  c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_n[2]. (constraint file  c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_data_p[0]. (constraint file  c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_p[0]. (constraint file  c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_data_p[1]. (constraint file  c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_p[1]. (constraint file  c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_data_p[2]. (constraint file  c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_p[2]. (constraint file  c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for Clk. (constraint file  c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for Clk. (constraint file  c:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/microblaze_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/microblaze_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/microblaze_0_axi_intc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/mdm_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/clk_wiz_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/rst_clk_wiz_1_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/axi_uartlite_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/gpio_usb_rst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/gpio_usb_int. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/gpio_usb_keycode. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/timer_usb_axi. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/spi_usb. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/xlconcat_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for vga_to_hdmi. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for clk_wiz. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1970.828 ; gain = 1162.645
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'State_reg' in module 'gamefsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   Start |                       0000000001 |                      00000000001
+                Newblock |                       0000000010 |                      00000000010
+              Blockcheck |                       0000000100 |                      00000000011
+               Blockmove |                       0000001000 |                      00000001011
+              Updategrid |                       0000010000 |                      00000001100
+                Rowcheck |                       0000100000 |                      00000000100
+               Rowcheck1 |                       0001000000 |                      00000000101
+               Rowcheck2 |                       0010000000 |                      00000000110
+               Rowcheck3 |                       0100000000 |                      00000000111
+               Rowcheck4 |                       1000000000 |                      00000001000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'State_reg' using encoding 'one-hot' in module 'gamefsm'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:00 ; elapsed = 00:01:04 . Memory (MB): peak = 1970.828 ; gain = 1162.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 4     
+	   2 Input   11 Bit       Adders := 8     
+	   2 Input   10 Bit       Adders := 14    
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               26 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	               10 Bit    Registers := 6     
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 304   
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input   26 Bit        Muxes := 3     
+	  21 Input   16 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 3     
+	  20 Input   16 Bit        Muxes := 2     
+	   3 Input   16 Bit        Muxes := 1     
+	   8 Input   15 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 5     
+	  10 Input   10 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 1     
+	   5 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 6     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1169  
+	  12 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 7740  
+	   5 Input    1 Bit        Muxes := 10    
+	   6 Input    1 Bit        Muxes := 1     
+	   7 Input    1 Bit        Muxes := 1     
+	   8 Input    1 Bit        Muxes := 1     
+	   9 Input    1 Bit        Muxes := 1     
+	  10 Input    1 Bit        Muxes := 3     
+	  11 Input    1 Bit        Muxes := 1     
+	  12 Input    1 Bit        Muxes := 1     
+	  13 Input    1 Bit        Muxes := 1     
+	  14 Input    1 Bit        Muxes := 1     
+	  15 Input    1 Bit        Muxes := 1     
+	  16 Input    1 Bit        Muxes := 1     
+	  17 Input    1 Bit        Muxes := 1     
+	  18 Input    1 Bit        Muxes := 1     
+	  19 Input    1 Bit        Muxes := 1     
+	  20 Input    1 Bit        Muxes := 1     
+	  21 Input    1 Bit        Muxes := 1     
+	  22 Input    1 Bit        Muxes := 1     
+	  23 Input    1 Bit        Muxes := 1     
+	  26 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 1     
+	  24 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:58 ; elapsed = 00:02:06 . Memory (MB): peak = 1970.828 ; gain = 1162.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'Clk'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:01 ; elapsed = 00:02:10 . Memory (MB): peak = 1970.828 ; gain = 1162.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:12 ; elapsed = 00:02:21 . Memory (MB): peak = 1970.828 ; gain = 1162.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:16 ; elapsed = 00:02:24 . Memory (MB): peak = 1970.828 ; gain = 1162.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:19 ; elapsed = 00:02:28 . Memory (MB): peak = 1970.828 ; gain = 1162.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:19 ; elapsed = 00:02:28 . Memory (MB): peak = 1970.828 ; gain = 1162.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:20 ; elapsed = 00:02:29 . Memory (MB): peak = 1970.828 ; gain = 1162.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------------------+----------+
+|      |BlackBox name                    |Instances |
++------+---------------------------------+----------+
+|1     |mb_block_xbar_0                  |         1|
+|2     |mb_block_dlmb_bram_if_cntlr_0    |         1|
+|3     |mb_block_dlmb_v10_0              |         1|
+|4     |mb_block_ilmb_bram_if_cntlr_0    |         1|
+|5     |mb_block_ilmb_v10_0              |         1|
+|6     |mb_block_lmb_bram_0              |         1|
+|7     |mb_block_axi_uartlite_0_0        |         1|
+|8     |mb_block_clk_wiz_1_0             |         1|
+|9     |mb_block_axi_gpio_0_2            |         1|
+|10    |mb_block_axi_gpio_0_3            |         1|
+|11    |mb_block_axi_gpio_0_1            |         1|
+|12    |mb_block_mdm_1_0                 |         1|
+|13    |mb_block_microblaze_0_0          |         1|
+|14    |mb_block_microblaze_0_axi_intc_0 |         1|
+|15    |mb_block_rst_clk_wiz_1_100M_0    |         1|
+|16    |mb_block_axi_quad_spi_0_0        |         1|
+|17    |mb_block_axi_timer_0_0           |         1|
+|18    |clk_wiz_0                        |         1|
+|19    |hdmi_tx_0                        |         1|
++------+---------------------------------+----------+
+
+Report Cell Usage: 
++------+-------------------------------+------+
+|      |Cell                           |Count |
++------+-------------------------------+------+
+|1     |clk_wiz                        |     1|
+|2     |hdmi_tx                        |     1|
+|3     |mb_block_axi_gpio_0            |     3|
+|6     |mb_block_axi_quad_spi_0        |     1|
+|7     |mb_block_axi_timer_0           |     1|
+|8     |mb_block_axi_uartlite_0        |     1|
+|9     |mb_block_clk_wiz_1             |     1|
+|10    |mb_block_dlmb_bram_if_cntlr    |     1|
+|11    |mb_block_dlmb_v10              |     1|
+|12    |mb_block_ilmb_bram_if_cntlr    |     1|
+|13    |mb_block_ilmb_v10              |     1|
+|14    |mb_block_lmb_bram              |     1|
+|15    |mb_block_mdm_1                 |     1|
+|16    |mb_block_microblaze_0          |     1|
+|17    |mb_block_microblaze_0_axi_intc |     1|
+|18    |mb_block_rst_clk_wiz_1_100M    |     1|
+|19    |mb_block_xbar                  |     1|
+|20    |CARRY4                         |    47|
+|21    |LUT1                           |     8|
+|22    |LUT2                           |   141|
+|23    |LUT3                           |   557|
+|24    |LUT4                           |   334|
+|25    |LUT5                           |   902|
+|26    |LUT6                           |  2185|
+|27    |MUXF7                          |   237|
+|28    |MUXF8                          |    46|
+|29    |FDCE                           |    37|
+|30    |FDPE                           |     3|
+|31    |FDRE                           |   361|
+|32    |FDSE                           |    82|
+|33    |IBUF                           |     4|
+|34    |OBUF                           |    29|
++------+-------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:20 ; elapsed = 00:02:29 . Memory (MB): peak = 1970.828 ; gain = 1162.645
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:53 ; elapsed = 00:02:20 . Memory (MB): peak = 1970.828 ; gain = 1071.137
+Synthesis Optimization Complete : Time (s): cpu = 00:02:20 ; elapsed = 00:02:29 . Memory (MB): peak = 1970.828 ; gain = 1162.645
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 1970.828 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 330 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1970.828 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: b0c4957
+INFO: [Common 17-83] Releasing license: Synthesis
+122 Infos, 136 Warnings, 5 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:23 ; elapsed = 00:02:34 . Memory (MB): peak = 1970.828 ; gain = 1538.238
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/cherr/ECE385_final134/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.runs/synth_1/mb_usb_hdmi_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mb_usb_hdmi_top_utilization_synth.rpt -pb mb_usb_hdmi_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  8 02:20:36 2023...

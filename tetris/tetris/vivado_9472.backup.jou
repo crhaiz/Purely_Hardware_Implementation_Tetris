@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Dec  7 22:16:27 2023
+# Process ID: 9472
+# Current directory: C:/Users/adith/Downloads/ECE385_final_10/ECE385_final/ECE385_Lab7
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent816 C:\Users\adith\Downloads\ECE385_final_10\ECE385_final\ECE385_Lab7\ECE385_Lab7.xpr
+# Log file: C:/Users/adith/Downloads/ECE385_final_10/ECE385_final/ECE385_Lab7/vivado.log
+# Journal file: C:/Users/adith/Downloads/ECE385_final_10/ECE385_final/ECE385_Lab7\vivado.jou
+# Running On: DESKTOP-4KDMJJH, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 10, Host memory: 16716 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/adith/Downloads/ECE385_final_10/ECE385_final/ECE385_Lab7/ECE385_Lab7.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/adith/Downloads/ECE385_final_10/ECE385_final/ECE385_Lab7/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/adith/Downloads/ECE385_final_10/ECE385_final/ECE385_Lab7/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/adith/Downloads/ECE385_final_10/ECE385_final/ECE385_Lab7/mb_usb_hdmi_top.xsa
+write_hw_platform -fixed -include_bit -force -file C:/Users/adith/Downloads/ECE385_final_10/ECE385_final/ECE385_Lab7/mb_usb_hdmi_top.xsa
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_run synth_1 -name synth_1
+show_objects -name u_ila_ [get_cells -hierarchical -filter { PRIMITIVE_TYPE =~ BMEM.*.* } ]
+show_objects -name u_ila_0/probe1 [get_cells -hierarchical -filter { PRIMITIVE_TYPE =~ BMEM.*.* } ]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/adith/Downloads/ECE385_final_10/ECE385_final/ECE385_Lab7/mb_usb_hdmi_top.xsa

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="test_for_fsm_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="test_for_fsm" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="85.288 ns"></ZoomStartTime>
+      <ZoomEndTime time="122.689 ns"></ZoomEndTime>
+      <Cursor1Time time="88.838 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="98"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="14" />
+   <wvobject fp_name="/test_for_fsm/Clk" type="logic">
+      <obj_property name="ElementShortName">Clk</obj_property>
+      <obj_property name="ObjectShortName">Clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_for_fsm/blockgrid" type="array">
+      <obj_property name="ElementShortName">blockgrid[15:0]</obj_property>
+      <obj_property name="ObjectShortName">blockgrid[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_for_fsm/Reset" type="logic">
+      <obj_property name="ElementShortName">Reset</obj_property>
+      <obj_property name="ObjectShortName">Reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_for_fsm/keycode" type="array">
+      <obj_property name="ElementShortName">keycode[15:0]</obj_property>
+      <obj_property name="ObjectShortName">keycode[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_for_fsm/movevalid" type="logic">
+      <obj_property name="ElementShortName">movevalid</obj_property>
+      <obj_property name="ObjectShortName">movevalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_for_fsm/rowfull" type="logic">
+      <obj_property name="ElementShortName">rowfull</obj_property>
+      <obj_property name="ObjectShortName">rowfull</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_for_fsm/startGame" type="logic">
+      <obj_property name="ElementShortName">startGame</obj_property>
+      <obj_property name="ObjectShortName">startGame</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_for_fsm/newblock" type="logic">
+      <obj_property name="ElementShortName">newblock</obj_property>
+      <obj_property name="ObjectShortName">newblock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_for_fsm/blockcheck" type="logic">
+      <obj_property name="ElementShortName">blockcheck</obj_property>
+      <obj_property name="ObjectShortName">blockcheck</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_for_fsm/State" type="array">
+      <obj_property name="ElementShortName">State[4:0]</obj_property>
+      <obj_property name="ObjectShortName">State[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_for_fsm/Next_state" type="array">
+      <obj_property name="ElementShortName">Next_state[4:0]</obj_property>
+      <obj_property name="ObjectShortName">Next_state[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_for_fsm/ErrorCnt" type="array">
+      <obj_property name="ElementShortName">ErrorCnt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ErrorCnt[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_for_fsm/fsm/State" type="array">
+      <obj_property name="ElementShortName">State[10:0]</obj_property>
+      <obj_property name="ObjectShortName">State[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_for_fsm/fsm/Next_state" type="array">
+      <obj_property name="ElementShortName">Next_state[10:0]</obj_property>
+      <obj_property name="ObjectShortName">Next_state[10:0]</obj_property>
+   </wvobject>
+</wave_config>

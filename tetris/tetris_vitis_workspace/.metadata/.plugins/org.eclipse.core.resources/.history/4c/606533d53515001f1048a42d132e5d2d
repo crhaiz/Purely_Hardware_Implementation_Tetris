@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ASCII"?>
+<systemproject:SystemProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" xmlns:systemproject="http://www.xilinx.com/systemproject" name="tetris_workspace_system" platform="C:/Users/cherr/ece385/ECE385_final134/ECE385_final_10/ECE385_final/tetris_vitis_workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm" platformUID="xilinx:::0.0(custom)" sysConfig="mb_usb_hdmi_top" runtime="cpp" rootFSLocation="" linuxImage="" sysroot="">
+  <configuration name="Debug" id="com.xilinx.sdx.system.managedbuilder.debugConfiguration.1458075268">
+    <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="tetris_workspace" domainName="standalone_microblaze_0" domainPrettyName="standalone_microblaze_0" appBuildConfig="Debug"/>
+      <options xsi:type="sdkproject:SdkOptions" generateSdCard="true"/>
+    </configBuildOptions>
+  </configuration>
+  <configuration name="Release" id="com.xilinx.sdx.system.managedbuilder.releaseConfiguration.1076117778">
+    <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="tetris_workspace" domainName="standalone_microblaze_0" domainPrettyName="standalone_microblaze_0" appBuildConfig="Release"/>
+      <options xsi:type="sdkproject:SdkOptions" generateSdCard="true"/>
+    </configBuildOptions>
+  </configuration>
+</systemproject:SystemProject>

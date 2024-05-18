@@ -1,0 +1,169 @@
+{
+    "ltx_root": {
+        "version": 4,
+        "minor": 0,
+        "ltx_data": [
+            {
+                "name": "EDA_PROBESET",
+                "active": true,
+                "debug_cores": [
+                    {
+                        "type": "XSDB_V3",
+                        "name": "dbg_hub",
+                        "spec": "labtools_xsdbm_v3",
+                        "clk_input_freq_hz": "25000000"
+                    },
+                    {
+                        "type": "ILA_V3",
+                        "name": "u_ila_0",
+                        "spec": "labtools_ila_v6",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 0,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "23E7D65A79BC59F7BC47406C1714DFAE",
+                        "pins": [
+                            {
+                                "name": "probe0",
+                                "id": 0,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "fsm/State",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "fsm/State[3]",
+                                                "parentNetId": 0
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe1",
+                                "id": 1,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "canmovedown",
+                                        "isBus": false
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "ILA_V3",
+                        "name": "u_ila_1",
+                        "spec": "labtools_ila_v6",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 1,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "3B505A030738513C98471D25F5B1F848",
+                        "pins": [
+                            {
+                                "name": "probe0",
+                                "id": 2,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "canmoveleft",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe1",
+                                "id": 3,
+                                "type": "DATA",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "canmoveright",
+                                        "isBus": false
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "parent_nets": [
+                    {
+                        "id": 0,
+                        "name": "fsm/State[3]",
+                        "state_reg": [
+                            {
+                                "name": "fsm/FSM_onehot_State_reg[3]",
+                                "states": [
+                                    {
+                                        "name": "Start",
+                                        "val": "0000000001"
+                                    },
+                                    {
+                                        "name": "Rowcheck3",
+                                        "val": "0100000000"
+                                    },
+                                    {
+                                        "name": "Rowcheck4",
+                                        "val": "1000000000"
+                                    },
+                                    {
+                                        "name": "Rowcheck2",
+                                        "val": "0010000000"
+                                    },
+                                    {
+                                        "name": "Rowcheck1",
+                                        "val": "0001000000"
+                                    },
+                                    {
+                                        "name": "Blockcheck",
+                                        "val": "0000000100"
+                                    },
+                                    {
+                                        "name": "Rowcheck",
+                                        "val": "0000100000"
+                                    },
+                                    {
+                                        "name": "Newblock",
+                                        "val": "0000000010"
+                                    },
+                                    {
+                                        "name": "Blockmove",
+                                        "val": "0000001000"
+                                    },
+                                    {
+                                        "name": "Updategrid",
+                                        "val": "0000010000"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
